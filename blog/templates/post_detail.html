@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container">
+<div class="col-sm-12">
+
+{% include 'headlines.html' %}
+
+<p class="title_nagy">{{instance.title}}</p>
+
+<div class="col-sm-7">
+	<div class="thumbnail">
+		<div class="info_vastag">
+
+		{{ instance.author }}
+		<a href="{{instance.get_category_url}}">{{ instance.hashtag | upper }}</a>
+		{% if instance.upload_time.date == timezone.now.date %}
+		ma {{ instance.upload_time | date:"G:i" | lower }}
+		{% else %}
+		{{ instance.upload_time | date:"F d, l G:i" | lower}}
+		{% endif %}	
+		</div>
+	<p class="content detail">{{ instance.content }}</p>
+	{% if instance.image %}
+	<img src="{{ instance.image.url }}"></h3>
+	{% endif %}
+	</div>
+	<div class="links">
+		<div class="fb-share-button" data-href="http://127.0.0.1:8000/post/6/" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+			<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8000{{instance.get_absolute_url}}&amp;src=sdkpreparse"><img src='{% static "icons/letöltés.png" %}'></a>
+		</div>
+		<div>
+			<a class="twitter-share"
+			href="https://twitter.com/intent/tweet">
+			<img src="{% static 'icons/letöltés (2).png' %}"></a>
+		</div>
+		<div>
+			<a href="https://plus.google.com/share?url={URL}" onclick="javascript:window.open(this.href,
+			'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
+			src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></a>
+		</div>
+		<div>
+			<a className="fa fa-linkedin share-base share-linked-in spacing-left-5" onclick="window.open('https://www.linkedin.com/cws/share?url=the_url')"><img src='{% static "icons/LinkedIn_logo_initials.png" %}'></a>
+		</div>
+
+		<div>
+			<a data-pin-do="buttonBookmark" data-pin-custom="true" data-pin-round="true" data-pin-save="false" href="https://www.pinterest.com/pin/create/button/"><img src="{% static 'icons/letöltés (1).png' %}" /></a>
+		</div>
+		<div class="fb-share-button" data-href="http://127.0.0.1:8000/post/6/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fpost%2F6%2F&amp;src=sdkpreparse">Share</a></div>
+
+	</div>
+		<p>{{instance.get_absolute_url|urlize}}</p>
+</div>
+
+{% include 'sidebar_detail_logic.html' %}
+
+</div>
+</div>
+{% endblock content %}

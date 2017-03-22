@@ -1,0 +1,25 @@
+<div class="row" id="bal-oszlop">
+	<div class="col-md-12">
+		<div class="thumbnail">
+		<h3 id="bal-title"><span><a href="{{ obj.get_absolute_url }}">{{ obj.title | capfirst }}</a></span></h3>
+		{% if obj.image %}
+		<a href="{{ obj.get_absolute_url }}"><img src="{{ obj.image.url }}"></a>
+		{% endif %}
+
+		{% if obj.author.profile_pic %}
+		<img src="{{ obj.author.profile_pic.url }}" class="profile_pic">
+		{% endif %}
+
+		<div id="info">
+			{{ obj.author }}
+			<a href="{{obj.get_category_url}}">{{ obj.hashtag | upper }}</a>
+			{% if obj.upload_time.date == timezone.now.date %}
+			ma {{ obj.upload_time | date:"G:i" | lower }}
+			{% else %}
+			{{ obj.upload_time | date:"F d, l G:i" | lower}}
+			{% endif %}	
+		</div>
+		<div class="content">{{ obj.content | truncatechars:100 }}</div>
+		</div>
+	</div>
+</div>

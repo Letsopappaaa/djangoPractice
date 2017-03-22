@@ -1,0 +1,262 @@
+a {
+	color: #000000;
+}
+
+p {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+h3 span a:hover{
+	color: #000000;
+}
+
+.thumbnail {
+	margin-bottom: 0px;
+	border: none;
+}
+
+#bal-oszlop {
+	border-left: 5px solid #C9C6C3;
+	margin-top: 30px;
+
+}
+
+#bal-title {
+	background-color: #FFFF73;
+	font-size: 18px;
+	font-weight: bold;
+	word-spacing: 2px;
+	line-height: 25px;
+	display: inline;
+	padding: 0.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	margin-bottom: 20px;
+}
+
+.nav li a:hover{
+	background-color: #EFEAD5;
+}
+
+hr {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: -40px;
+	border-width: 5px;
+	border-color: #29AF0A;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.navbar {
+	background-color: #000000;
+}
+.navbar ul li {
+	text-transform: capitalize;
+}
+
+img {
+	margin-top: 15px;
+}
+
+
+
+.content {
+	font-weight: normal;
+	word-spacing: 2px;
+	font-family: Helvetica, sans-serif;
+	line-height: 22px;
+	margin-top: 15px;
+}
+
+.jobb div .content{
+	font-size: 20px;
+	line-height: 28px;
+}
+
+
+.kép_alatt_fekete{
+
+}
+
+.kép_alatt_sárga{
+
+}
+
+
+.kép_alatt_sima{
+
+}
+
+.kép_felett_fekete h3 span a{
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	word-spacing: 2px;
+	line-height: 25px;
+	display: inline;
+	position: relative;
+	padding: 0.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	margin-bottom: 20px;
+}
+
+
+.kép_felett_sárga h3 span a{
+	background-color: #FFFF73;
+	font-size: 18px;
+	font-weight: bold;
+	word-spacing: 2px;
+	line-height: 25px;
+	display: inline;
+	padding: 0.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	margin-bottom: 20px;
+}
+
+.képen_alul_sárga h3 span a{
+	background-color: #FFFF73;
+	font-size: 18px;
+	font-weight: bold;
+	word-spacing: 2px;
+	line-height: 25px;
+	display: inline;
+	position: relative;
+	top: 300px;
+	left: 20px;
+	padding: 0.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	margin-bottom: 20px;
+}
+
+
+.képen_felül_fekete h3 span a{
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	word-spacing: 2px;
+	line-height: 25px;
+	display: inline;
+	position: relative;
+	padding: 0.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	margin-bottom: 20px;
+}
+
+.title_nagy {
+	font-size: 55px;
+	padding-top: 40px;
+	margin-left: 20px;
+	line-height: 60px;
+}
+
+.row.headlines .col-sm-4{
+	border-left: 5px solid #29af0a;
+	min-height: 110px;
+	max-height: 110px;
+	color: grey;
+	font-size: 10px;
+}
+
+.headlines h3{
+	font-size: 20px;
+	line-height: 28px;
+	margin-top: 0px;
+	font-style: normal;
+}
+
+.headlines h3:hover{
+	color: black;
+}
+
+.headline_container{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+p {
+	font-style: normal;
+}
+
+img.profile_pic{
+	max-height: 50px;
+	max-width: 50px;
+	display: inline-block;
+}
+
+#info {
+	color: grey;
+	line-height: 10px;
+	float: right;
+	max-width: 270px;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+#info a {
+	color: grey;
+
+}
+
+.info_vastag{
+	color: grey;
+	line-height: 10px;
+	max-width: 600px;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+.info_vastag a{
+	color: grey;
+}
+
+img.post_img_nagy {
+	width: 800px;
+}
+
+.detail_info{
+
+}
+
+.detail{
+	margin-top: 40px; 
+}
+
+
+.title_nagy_category {
+	display: flex;
+	max-height: 120px;
+}
+
+
+.title_nagy_category p {
+	font-size: 55px;
+	padding-top: 40px;
+	line-height: 60px;
+}
+
+
+.title_nagy_category_hr {
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+}
+
+.title_nagy_category_hr hr {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
